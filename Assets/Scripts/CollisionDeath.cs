@@ -23,5 +23,13 @@ public class CollisionDeath : MonoBehaviour
             Destroy(gameObject);
         if (col.gameObject.name == "JumpBarrier")
             Destroy(gameObject);
+        if (col.gameObject.name == "SlideBarrier")
+            Destroy(gameObject);
+        if (col.gameObject.name == "Train")
+            Destroy(gameObject);
+        if (col.gameObject.name == "Train (1)")
+            Destroy(gameObject);
+        if (col.gameObject.name == "Train (2)")
+            Destroy(gameObject);
     }
 }
