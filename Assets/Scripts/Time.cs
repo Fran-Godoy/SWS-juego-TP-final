@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InstanciateRoad : MonoBehaviour
+public class Time : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,9 +13,6 @@ public class InstanciateRoad : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Instantiate(gameObject.name == "Camino")
-            {
-
-        }
+        
     }
 }

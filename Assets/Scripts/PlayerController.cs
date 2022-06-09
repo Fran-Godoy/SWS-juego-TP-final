@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         multiplicadorEscala = -1;
-       
     }
 
     // Update is called once per frame
@@ -26,14 +25,11 @@ public class PlayerController : MonoBehaviour
         {
             transform.position -= new Vector3(0.1f, 0, 0);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            transform.position += new Vector3(0, 2f, 0);
-        }
         if (Input.GetKeyDown(KeyCode.S))
         {
             transform.localScale += new Vector3(0, 0.5f,0) * multiplicadorEscala;
             multiplicadorEscala *= -1;
         }
+        
     }
 }
