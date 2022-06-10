@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionDeath : MonoBehaviour
 {
@@ -30,38 +31,10 @@ public class CollisionDeath : MonoBehaviour
         {
             hasJump = maxJumps;
         }
-        if (col.gameObject.name == "Pared")
+        if (col.gameObject.name == "Obstacle") { 
             Destroy(gameObject);
-        if (col.gameObject.name == "Pared (1)")
-            Destroy(gameObject);
-        if (col.gameObject.name == "JumpBarrier")
-            Destroy(gameObject);
-        if (col.gameObject.name == "SlideBarrier")
-            Destroy(gameObject);
-        if (col.gameObject.name == "Train")
-            Destroy(gameObject);
-        if (col.gameObject.name == "Train (1)")
-            Destroy(gameObject);
-        if (col.gameObject.name == "Train (2)")
-            Destroy(gameObject);
-        if (col.gameObject.name == "SlideBarrier (1)")
-            Destroy(gameObject);
-        if (col.gameObject.name == "SlideBarrier (2)")
-            Destroy(gameObject);
-        if (col.gameObject.name == "SlideBarrier (3)")
-            Destroy(gameObject);
-        if (col.gameObject.name == "SlideBarrier (4)")
-            Destroy(gameObject);
-        if (col.gameObject.name == "SlideBarrier (5)")
-            Destroy(gameObject);
-        if (col.gameObject.name == "SlideBarrier (6)")
-            Destroy(gameObject);
-        if (col.gameObject.name == "SlideBarrier (7)")
-            Destroy(gameObject);
-        if (col.gameObject.name == "JumpBarrier (1)")
-            Destroy(gameObject);
-        if (col.gameObject.name == "JumpBarrier (2)")
-            Destroy(gameObject);
+        SceneManager.LoadScene("GameLose"); }
+        
 
     }
 }

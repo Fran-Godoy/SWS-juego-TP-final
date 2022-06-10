@@ -18,7 +18,7 @@ public class Timemana : MonoBehaviour
     void Update() {
         currentTime = Time.timeSinceLevelLoad;
         txtTimeFloored.text = Mathf.Floor(currentTime).ToString();
-        if (currentTime > 12)
+        if (currentTime > 13)
         {
             SceneManager.LoadScene("GameWin"); ;
         }
