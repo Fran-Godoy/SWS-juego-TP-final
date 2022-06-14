@@ -5,28 +5,25 @@ using UnityEngine;
 public class Instantiator : MonoBehaviour
 {
     public GameObject objectToClone;
-    int cloneAmount;
-    public void CloneObject()
-    {
-        cloneAmount = 5;
-        int i = 0;
-        while (i < cloneAmount)
-        {
-            Instantiate(objectToClone);
-            i++;
-        }
-
-
-    }
+    public int cloneAmount;
     // Start is called before the first frame update
     void Start()
     {
-        
+       CloneObject();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    public void CloneObject()
+    {
+        int contador = 0;
+        while (contador < cloneAmount)
+        {
+            Instantiate(objectToClone);
+            contador++;
+        }
     }
 }
