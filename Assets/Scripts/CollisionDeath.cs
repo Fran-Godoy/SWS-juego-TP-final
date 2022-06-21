@@ -34,7 +34,20 @@ public class CollisionDeath : MonoBehaviour
         if (col.gameObject.name == "Obstacle") { 
             Destroy(gameObject);
         SceneManager.LoadScene("GameLose"); }
-        
+        if (col.gameObject.name == "JumpBarr")
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene("GameLose");
+        }
+        if (col.gameObject.name == "DEfSlideBarr")
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene("GameLose");
+        }
+
+
 
     }
+
 }
+    
