@@ -44,6 +44,16 @@ public class CollisionDeath : MonoBehaviour
             Destroy(gameObject);
             SceneManager.LoadScene("GameLose");
         }
+        if (col.gameObject.name == "DEfSlideBarr (1)")
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene("GameLose");
+        }
+        if (col.gameObject.name == "DEfSlideBarr (2)")
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene("GameLose");
+        }
 
 
 
