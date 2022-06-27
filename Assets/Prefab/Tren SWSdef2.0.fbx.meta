@@ -1,14 +1,16 @@
 fileFormatVersion: 2
-guid: 938510fdb184bc241a3d41f2636be464
+guid: 4ce329df1f94dd047bb0af2c84014859
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material
+    2100000: MatRueda
+    2100002: matRueda
+    2100004: Material
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
+    4300000: TrenSWS
     6400000: //RootNode
   externalObjects: {}
   materials:

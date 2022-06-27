@@ -34,11 +34,6 @@ public class CollisionDeath : MonoBehaviour
         if (col.gameObject.name == "Obstacle") { 
             Destroy(gameObject);
         SceneManager.LoadScene("GameLose"); }
-        
-
-
-
-
     }
 
 }
